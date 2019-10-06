@@ -1,0 +1,14 @@
+{
+  "name": "homepage",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:digilist/homepage.git",
+  "author": "Markus Fasselt <markus.fasselt@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "parcel-bundler": "^1.12.3"
+  },
+  "devDependencies": {
+    "sass": "^1.23.0"
+  }
+}

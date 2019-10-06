@@ -1,3 +1,109 @@
+@import "normalize";
+
+$fa-font-path: "../../node_modules/@fortawesome/fontawesome-free/webfonts" !default;
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+
+$color-primary: #4F8CD1;
+$spacing: 2rem;
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+    font-size: 100%;
+}
+
 body {
-    background: gray;
+    color: #FFFFFF;
+    font-family: Nunito, sans-serif;
+    height: 100%;
+}
+
+.background {
+    background: url(../assets/administration-architecture-buildings-534106.jpg) center center no-repeat;
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+
+    .overlay {
+        background: rgba(#333333, 0.8);
+        height: 100%;
+        position: absolute;
+        width: 100%;
+    }
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 600px;
+    min-height: 100%;
+    padding: 1rem;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+.picture {
+    margin-bottom: $spacing;
+
+    img {
+        $_size: 8rem;
+
+        border-radius: 50%;
+        height: $_size;
+        width: $_size;
+    }
+}
+
+.name {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+    text-shadow: 0 1px 1px rgba(#000, 0.9);
+    text-transform: uppercase;
+}
+
+.description {
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin-top: $spacing;
+    text-shadow: 0 1px 1px rgba(#000, 0.9);
+}
+
+.separator {
+    background: rgba(#ffffff, 0.7);
+    border: 0;
+    height: 1px;
+    margin: $spacing;
+    max-width: 20rem;
+    width: 100%;
+}
+
+.social {
+    a {
+        color: #FFFFFF;
+        transition: color ease-in-out 0.2s;
+        margin: 0 1rem;
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+
+    i {
+        font-size: 2rem;
+    }
 }
